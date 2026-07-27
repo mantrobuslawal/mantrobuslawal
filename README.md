@@ -1,29 +1,29 @@
 # Hi, I'm Miriam 👋🏾
 
-**Platform & DevSecOps Engineer** building secure, observable cloud-native platforms with Kubernetes, Go, Terraform, CI/CD, and production-grade automation.
+**Senior Platform & DevSecOps Engineer** building secure, observable and boringly reliable cloud-native platforms.
 
-I’m focused on building the kind of systems that do not just work on a laptop, but can be explained, tested, deployed, monitored, secured, and handed over without everyone needing to form a prayer circle around the terminal. 🙏🏾💻
+I work across Kubernetes, infrastructure as code, secure delivery, developer platforms and production operations, with a strong focus on making systems understandable, repeatable and safe to run.
+
+I like building things that don't just work on a laptop, but can be **explained, tested, deployed, monitored, secured and handed over** without everyone needing to form a prayer circle around the terminal. 🙏🏾💻
+
+> **The dream is boring production. The drama can stay in the group chat.** 😌
 
 ---
 
-## 👩🏾‍💻 What I’m About
+## 👩🏾‍💻 What I Do
 
-I’m building towards senior Platform Engineering, DevSecOps, Kubernetes Platform Engineering, and Cloud Engineering contract roles.
+My work sits across **Platform Engineering, DevSecOps and Cloud Engineering**, particularly:
 
-My work focuses on:
+* ☸️ Kubernetes platforms and containerised workloads
+* 🔐 DevSecOps, secure delivery and policy-as-code
+* 🧱 Infrastructure as Code and reusable platform components
+* 🚀 CI/CD, GitOps and deployment automation
+* 🌩️ Cloud infrastructure across AWS, Azure and GCP
+* 📈 Observability, logging, metrics and distributed tracing
+* 🧰 Developer experience and internal platform tooling
+* 🧯 Production readiness, resilience and operational maturity
 
-- ☸️ Kubernetes platform engineering
-- 🔐 DevSecOps and secure delivery
-- 🌩️ Multi-cloud infrastructure and automation across AWS, GCP, and Azure
-- 🧱 Infrastructure as Code
-- ⚡ Serverless and Function as a Service patterns
-- 🚀 CI/CD pipelines
-- 📈 Observability, logging, tracing, and metrics
-- 🧪 Testing strategy for distributed systems
-- 🧰 Developer experience and internal platform tooling
-- 🧯 Production readiness, resilience, and operational maturity
-
-I care about building systems that are:
+I care about systems that are:
 
 ```text
 secure
@@ -35,385 +35,199 @@ automated
 boringly reliable
 ```
 
-The dream is boring production. The drama can stay in the group chat. 😌
+Tools matter.
+
+Engineering judgement matters more.
 
 ---
 
-## 🏗️ Current Flagship Project: bfstore
+## 🏗️ Flagship Engineering Project: bfstore
 
 ### Borough Furniture Store
 
-**bfstore** stands for **Borough Furniture Store**.
+[**bfstore**](https://github.com/mantrobuslawal/bfstore) is a production-shaped cloud-native engineering case study built around a fictional ecommerce company selling developer-themed furniture and homeware.
 
-Borough Furniture Store is a fictional cloud-native ecommerce platform for developer-themed furniture and homeware.
+Yes, this means there are Gopher cushions. Obviously. 🐹
 
-The backstory: Borough started out selling speciality Golang-themed homeware to Go enthusiasts — because obviously every engineer needs a tasteful Gopher cushion. 🐹✨
+The shop is fictional. The engineering problems aren't.
 
-It then expanded into programming-language mascot-themed and computer-science-inspired homeware.
+I'm using bfstore to demonstrate how I approach an end-to-end system across:
 
-Example products include:
+* application and service architecture
+* API and event contracts
+* data ownership and service boundaries
+* Kubernetes and platform engineering
+* infrastructure and cloud foundations
+* CI/CD and GitOps
+* DevSecOps and software supply-chain controls
+* observability and production operations
+* resilience and failure handling
+* developer experience
+* architecture decisions and technical documentation
 
-- 🐹 Gopher desk lamps
-- 🛋️ Gopher cushion sets
-- 🧵 Rob Pike wall tapestries
-- 🔐 Rivest super-secure lockboxes
-- 🧭 Dijkstra pathfinding rugs
-- 🐍 Python plush beanbags
-- 🦀 Rust crab coat hooks
-- ☸️ Kubernetes helm bookends
-- 🕰️ Turing machine wall clocks
-- 🐞 Grace Hopper debugging blankets
+The goal isn't simply to build an application.
 
-Because nothing says “distributed systems engineer” like a well-observed microservice and a cryptography-themed lockbox in the hallway.
+It's to make the engineering thinking visible: **the decisions, trade-offs, constraints and operational consequences behind the code.**
 
----
-
-## 🧠 What bfstore Demonstrates
-
-bfstore is designed as a serious portfolio project wrapped in a memorable product story.
-
-It demonstrates:
-
-- 🧩 Microservice architecture
-- 📜 Architecture Decision Records
-- 📡 gRPC service communication
-- 📨 Kafka event-driven design
-- 🐬 MySQL service-owned databases
-- 🔎 Search and denormalised projections
-- 📦 Contract-first Protobuf design
-- 🧪 Unit, integration, contract, and end-to-end testing
-- 📊 OpenTelemetry-based observability
-- 🛡️ Secure service design
-- ☸️ Kubernetes deployment thinking
-- 🏗️ Infrastructure and platform engineering practices
-- 🧯 Resilience, retries, idempotency, and DLQ strategy
-- 📚 Client-facing documentation
-
-The goal is not just to build an app.
-
-The goal is to show how I think through architecture, trade-offs, delivery, operations, and reliability.
+Detailed architecture, implementation notes and design decisions live in the project repositories and on [Cloud Sandbox](https://cloud.doublewords.net/).
 
 ---
 
-## 🛒 bfstore Architecture Snapshot
+## 🗺️ The bfstore Engineering Ecosystem
 
-The first implementation focuses on a complete checkout vertical slice:
+bfstore is deliberately split across repositories that reflect different engineering responsibilities.
 
-```text
-Browse product
-→ Add product to basket
-→ Checkout
-→ Reserve stock
-→ Authorise payment
-→ Create shipment
-→ Create order
-→ Publish OrderCreated
-→ Send notification
-```
+| Repository                                                                                       | Focus                                                                  |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| [**bfstore**](https://github.com/mantrobuslawal/bfstore)                                         | Application architecture, services, contracts and domain design        |
+| [**bfstore-platform-infra**](https://github.com/mantrobuslawal/bfstore-platform-infra)           | Cloud foundations, Kubernetes infrastructure and platform provisioning |
+| [**bfstore-platform-gitops**](https://github.com/mantrobuslawal/bfstore-platform-gitops)         | GitOps configuration, environments and application delivery            |
+| [**bfstore-security-governance**](https://github.com/mantrobuslawal/bfstore-security-governance) | DevSecOps, policy-as-code and software supply-chain controls           |
+| [**bfstore-iac-modules**](https://github.com/mantrobuslawal/bfstore-iac-modules)                 | Reusable Infrastructure as Code modules                                |
+| [**bfstore-developer-platform**](https://github.com/mantrobuslawal/bfstore-developer-platform)   | Developer experience, golden paths and platform tooling                |
 
-Core services include:
+The separation is intentional.
 
-```text
-api-gateway
-catalog-service
-basket-service
-inventory-service
-order-service
-payment-service
-shipping-service
-notification-service
-search-service
-recommendation-service
-review-service
-auth-service
-customer-service
-```
+Application code, cloud foundations, deployment state, security policy and developer-platform concerns have different responsibilities, ownership boundaries and lifecycles.
 
-Communication model:
-
-```text
-gRPC = commands and queries that need an immediate response
-Kafka = facts that have already happened
-```
-
-Examples:
-
-```text
-ReserveStock is a gRPC command.
-StockReserved is a Kafka event.
-
-AuthorisePayment is a gRPC command.
-PaymentAuthorised is a Kafka event.
-
-CreateOrder is a gRPC command.
-OrderCreated is a Kafka event.
-```
+I want the repository structure to reflect that rather than putting the entire universe into one enormous `platform-stuff` directory and hoping for the best.
 
 ---
 
-## 🧺 Product Catalogue Design
+## 🧰 Core Engineering Toolkit
 
-Borough Furniture Store sells varied products, so the catalogue needs to support different product types without becoming a cursed spreadsheet with 400 nullable columns. 😭
+I work with a broad cloud-native stack, but these are some of the technologies that show up regularly in my work and projects.
 
-Examples:
+**Platform & Cloud**
+`Kubernetes` · `Linux` · `Docker` · `AWS` · `Azure` · `GCP`
 
-```text
-curtains need drop, width, lining, heading type
-bed frames need bed size, frame material, storage type
-rugs need shape, pile height, weave, material
-lamps need bulb type, wattage, fitting type
-lockboxes need lock type, security rating, dimensions
-```
+**Infrastructure & Delivery**
+`Terraform / OpenTofu` · `GitHub Actions` · `GitOps` · `Ansible`
 
-The design uses:
+**Applications & Data**
+`Go` · `gRPC` · `Protobuf` · `Kafka` · `MySQL`
 
-```text
-Catalogue Service = governed product source of truth
-MySQL = relational core catalogue data
-category-scoped attributes = flexible product characteristics
-Search Service = denormalised browse/search projection
-```
+**Observability & Operations**
+`OpenTelemetry` · `Prometheus` · `Grafana`
 
-This separates:
+I prefer choosing technology because it solves a concrete problem, not because somebody drew it on a CNCF landscape and I got excited.
 
-```text
-product governance from search performance
-source of truth from projection
-write model from read model
-```
-
-And most importantly:
-
-```text
-No giant product table of doom.
-No mystery JSON blob apocalypse.
-```
+Although, admittedly, that has happened.
 
 ---
 
-## 🧰 Technologies I’m Working With
+## 📚 How I Approach Engineering
 
-### Languages
+I like to understand the system before I start throwing YAML at it.
 
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### Platform & Cloud
-
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-
-![Serverless](https://img.shields.io/badge/Serverless-FD5750?style=for-the-badge&logo=serverless&logoColor=white)
-![Function as a Service](https://img.shields.io/badge/Function_as_a_Service-6C63FF?style=for-the-badge)
-
-### Infrastructure & Delivery
-
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
-
-### Backend & Data
-
-![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Protobuf](https://img.shields.io/badge/Protocol_Buffers-4285F4?style=for-the-badge)
-
-### Observability & Security
-
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-
----
-
-## 🧭 What I’m Currently Learning Deeply
-
-I’m currently strengthening my skills in:
-
-- ☸️ Kubernetes internals and platform engineering
-- 🔐 Kubernetes security and policy-as-code
-- 🌐 Linux networking for containers and cloud
-- ⚡ Serverless and Function as a Service across cloud providers
-- 🧱 Terraform module design
-- 📡 gRPC and Protobuf service design
-- 📨 Kafka event-driven architecture
-- 📈 Observability with OpenTelemetry
-- 🧪 Performance, stress, soak, and resilience testing
-- 🛡️ Supply chain security and secure CI/CD
-
-I like understanding systems from the ground up.
-
-Not just:
-
-```text
-kubectl apply -f vibes.yaml
-```
-
-but:
-
-```text
-why did this break,
-where did the packet go,
-what owns this data,
-what happens when this dependency fails,
-and who is getting paged at 2am?
-```
-
----
-
-## 📚 How I Work
-
-I like to start with:
+That usually means thinking through:
 
 ```text
 requirements
 service boundaries
 data ownership
-API contracts
-event contracts
-database design
+API and event contracts
+failure modes
+security boundaries
 testing strategy
 deployment model
-operational runbooks
+observability
+operational ownership
 ```
 
 Then I build.
 
-That may sound formal, but it prevents “surprise architecture” from appearing halfway through the project wearing a fake moustache. 🥸
+That might sound formal, but it prevents surprise architecture from appearing halfway through a project wearing a fake moustache. 🥸
+
+I'm particularly interested in the questions that appear **between** technologies:
+
+* Who owns this data?
+* What happens when this dependency fails?
+* Where does this request go?
+* How is this service authenticated?
+* What happens during a partial failure?
+* Can we deploy this safely?
+* Can someone other than the person who built it operate it?
+* What evidence tells us the system is healthy?
+* Who gets paged at 2am, and will the logs actually help them?
+
+`kubectl apply -f vibes.yaml` is not an operating model.
 
 ---
 
-## 🧪 Engineering Values
+## 🧪 Engineering Principles
 
 I value:
 
-- Clear service ownership
-- Good documentation
-- Honest trade-offs
-- Secure defaults
-- Repeatable automation
-- Observable systems
-- Testing beyond the happy path
-- Practical architecture
-- Small vertical slices
-- Production readiness
+* clear ownership and boundaries
+* secure defaults
+* useful documentation
+* honest engineering trade-offs
+* observable systems
+* repeatable automation
+* testing beyond the happy path
+* practical architecture
+* production readiness
 
-I do not value:
+I'm considerably less enthusiastic about:
 
-- Mystery YAML
-- Shared databases pretending to be microservices
-- Untested deployment scripts
-- Logs that say `something went wrong`
-- Dashboards nobody understands
-- “Temporary” hacks with permanent residency
+* mystery YAML
+* shared databases wearing microservice costumes
+* deployment scripts nobody has tested
+* logs that say `something went wrong`
+* dashboards nobody understands
+* "temporary" hacks with permanent residency
 
----
+Complexity sometimes earns its place.
 
-## 🛠️ Featured Project Roadmap
-
-For bfstore, I’m working through stages:
-
-### Stage 1 — Documentation and Architecture ✅
-
-- Requirements
-- Service boundaries
-- Domain model
-- ADRs
-- API design
-- Event design
-- Data ownership
-- Testing strategy
-
-### Stage 2 — Contract Foundation 🚧
-
-- Buf configuration
-- Protobuf contracts
-- gRPC service definitions
-- Shared common messages
-- API versioning
-
-### Stage 3 — Local Development Platform 🚧
-
-- Docker Compose
-- MySQL
-- Kafka
-- Service skeletons
-- Makefile workflow
-- Local seed data
-
-### Stage 4 — First Vertical Slice 🚧
-
-- Product listing
-- Basket management
-- Checkout
-- Stock reservation
-- Payment authorisation
-- Shipment creation
-- Order creation
-- Notification event consumption
-
-### Stage 5 — Platform Engineering Evidence 🔜
-
-- Kubernetes manifests
-- GitOps structure
-- CI/CD pipelines
-- Observability stack
-- Security controls
-- Resilience testing
-- Runbooks
+It should still have to explain itself.
 
 ---
 
-## 🌱 A Little Personality
+## 🔬 Areas I'm Going Deeper Into
 
-I like systems that are:
+Engineering doesn't have a finished state, so I deliberately keep strengthening the fundamentals underneath the tools I use.
 
-```text
-well documented
-well tested
-well observed
-and not held together by one shell script named final-final-real-prod.sh
-```
+Current rabbit holes include:
 
-I’m building this portfolio carefully because I want my work to show:
+* ☸️ Kubernetes internals and platform architecture
+* 🌐 Linux networking and container networking
+* 🔐 Kubernetes security and policy-as-code
+* 📈 OpenTelemetry and distributed systems observability
+* 🛡️ software supply-chain security
 
-```text
-technical depth
-clarity of thought
-engineering judgement
-client-readiness
-and a small amount of chaos-neutralising humour
-```
+I'm interested in understanding **why systems behave the way they do**, not just memorising the command that makes the error disappear.
+
+---
+
+## ✍🏾 Cloud Sandbox
+
+I write longer-form technical notes and document the engineering behind bfstore at:
+
+### [cloud.doublewords.net](https://cloud.doublewords.net/)
+
+**Cloud Sandbox** is my technical field journal for platform engineering, DevSecOps, Kubernetes, cloud infrastructure and production-shaped software design.
+
+It's where I have more room to explain the decisions that don't fit neatly into a commit message.
 
 ---
 
 ## 📫 Connect
 
-I’m open to conversations around:
+I'm always happy to talk about:
 
-- Platform Engineering
-- DevSecOps
-- Kubernetes
-- Cloud Infrastructure
-- Serverless and Function as a Service
-- Microservices
-- Secure Delivery
-- Observability
-- Contractor-focused engineering portfolios
+**Platform Engineering · DevSecOps · Kubernetes · Cloud Infrastructure · Secure Delivery · Developer Platforms · Observability · Senior Contract Engineering**
+
+🌐 [Cloud Sandbox](https://cloud.doublewords.net/)
+💼 [LinkedIn](https://www.linkedin.com/in/mariam-antrobus-dev/)
+🐙 [GitHub](https://github.com/mantrobuslawal)
+✉️ [Contact](https://cloud.doublewords.net/contact/)
 
 ---
 
 ## 🐹 Current Motto
 
-> Build it properly.  
-> Document the trade-offs.  
-> Make the logs useful.  
-> Keep the Gopher stylish.  
-
+> **Build it properly.**
+> **Document the trade-offs.**
+> **Make the logs useful.**
+> **Keep the Gopher stylish.**
